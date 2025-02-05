@@ -447,3 +447,65 @@ body {
     padding-top: 50px;
   }
 }
+
+/* Mobile Zoom Fix */
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+  min-zoom: 1.0;
+  max-zoom: 1.0;
+  user-zoom: fixed;
+}
+
+/* Mobile Reptilio Sizes */
+@media (max-width: 768px) {
+  .reptilio-float,
+  .card-mascot,
+  .phase-mascot,
+  .footer-mascot {
+    width: 160px !important;
+  }
+  
+  .mission-egg {
+    width: 100px !important;
+    left: -50px !important;
+    top: -50px !important;
+  }
+
+  /* Keep CTA mascot size unchanged */
+  .cta-mascot {
+    width: 120px !important;
+    right: -50px !important;
+  }
+  
+  .hero-mascot {
+    width: 280px !important;
+  }
+}
+
+/* Easter Egg Styles */
+.easter-egg {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0.2;
+  transition: all 0.3s ease;
+  width: 60px;
+  animation: float 4s infinite;
+}
+
+.easter-egg:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg) scale(1); }
+  100% { transform: rotate(360deg) scale(2); }
+}
+
+.spin-animation {
+  animation: spin 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
