@@ -1,0 +1,130 @@
+:root {
+  --reptile-orange: #FF6B35;
+  --neon-cyan: #00E0FF;
+  --jungle-black: #0A160A;
+  --scale-white: rgba(248, 250, 252, 0.9);
+  --font-heading: 'Orbitron', sans-serif;
+  --font-body: 'Exo 2', sans-serif;
+  --font-playful: 'Fredoka One', cursive;
+}
+
+/* Updated color scheme */
+body {
+  background: var(--jungle-black);
+  color: var(--scale-white);
+}
+
+/* Background overlay */
+.bg-overlay {
+  background: linear-gradient(135deg, rgba(10,22,10,0.95) 0%, rgba(255,107,53,0.15) 100%);
+}
+
+/* Reptile-themed elements */
+.deco-reptilio {
+  position: fixed;
+  opacity: 0.2;
+  mix-blend-mode: luminosity;
+  width: 400px !important;
+}
+
+.reptilio-1 { top: 5%; left: -200px; }
+.reptilio-2 { bottom: 15%; right: -250px; transform: scaleX(-1); }
+.reptilio-3 { top: 45%; left: -180px; }
+
+/* Hero visual adjustments */
+.hero-visual {
+  height: 500px;
+}
+
+.egg {
+  position: absolute;
+  width: 180px;
+  right: -50px;
+  bottom: 15%;
+  animation: eggFloat 4s ease-in-out infinite;
+}
+
+.hatchling {
+  position: absolute;
+  width: 220px;
+  left: 0;
+  top: 10%;
+  animation: scalePulse 3s ease-in-out infinite;
+}
+
+/* Updated button colors */
+.copy-btn {
+  background: var(--reptile-orange);
+}
+
+.social-btn {
+  border-color: var(--neon-cyan);
+  color: var(--neon-cyan);
+}
+
+.social-btn:hover {
+  background: var(--neon-cyan);
+}
+
+/* Token value color */
+.token-value {
+  color: var(--neon-cyan);
+}
+
+/* New animations */
+@keyframes eggFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes scalePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Mars AI original styles with updated variables */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  font-family: var(--font-heading);
+  text-align: center;
+  font-size: 2rem;
+  color: var(--neon-cyan);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: var(--reptile-orange);
+  color: var(--jungle-black);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: var(--neon-cyan);
+  color: var(--jungle-black);
+}
+
+.card {
+  background: var(--scale-white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--scale-white);
+  padding: 10px;
+}
