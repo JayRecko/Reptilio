@@ -68,8 +68,18 @@ h1, h2 {
   text-shadow: 2px 2px 0 #00ffff;
 }
 
+.content-box {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+/* Home Section */
 .cta {
   position: relative;
+  margin-top: 20px;
 }
 
 #buy-button {
@@ -92,8 +102,19 @@ h1, h2 {
   position: absolute;
   top: -50px;
   right: -50px;
-  width: 100px;
+  width: 150px;
   animation: float 3s ease-in-out infinite;
+}
+
+.floating-reptilios {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.floating-reptilio {
+  width: 120px;
+  animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -101,10 +122,11 @@ h1, h2 {
   50% { transform: translateY(-20px); }
 }
 
-/* Roadmap */
+/* Roadmap Section */
 .roadmap-container {
   position: relative;
-  height: 300px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 .egg {
@@ -116,17 +138,26 @@ h1, h2 {
 .burning-egg { left: 20%; }
 .hatched-egg { right: 20%; opacity: 0; }
 
+.roadmap-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.step {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #00ffff;
+  flex: 1;
+}
+
 /* Footer */
 footer {
   position: relative;
   padding: 20px;
   background: rgba(0, 0, 0, 0.5);
   text-align: center;
-}
-
-.social-links img {
-  width: 30px;
-  margin: 0 10px;
 }
 
 .contract-address span {
@@ -138,5 +169,5 @@ footer {
   position: absolute;
   bottom: 0;
   right: 20px;
-  width: 80px;
+  width: 100px;
 }
