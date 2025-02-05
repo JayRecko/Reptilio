@@ -2,160 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>REPTILIO | The Crypto Chameleon</title>
-  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/LOGO%20REPTILIO-Photoroom.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reptilio Memecoin</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&family=Kanit:wght@400;600&family=Bungee&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Background Elements -->
-  <div class="background-wrapper">
-    <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/DALL%C2%B7E%202025-02-05%2010.51.06%20-%20A%20vibrant%20and%20seamless%20background%20texture%20for%20a%20memecoin%20website%2C%20featuring%20neon%20greens%2C%20blues%2C%20and%20purples.%20The%20design%20consists%20of%20abstract%20reptile%20s.webp" class="reptile-bg" alt="Reptile Background">
-    <div class="bg-overlay"></div>
-  </div>
+  <!-- Background -->
+  <div class="background"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Reptilio Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tokenomics">Tokenomics</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#how-to-buy">How to Buy</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Main Content -->
-  <main class="container">
-    <!-- Navigation -->
-    <nav class="main-nav">
-      <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/LOGO%20REPTILIO-Photoroom.png" class="logo" alt="Reptilio Logo">
-      <div class="nav-links">
-        <a href="#about">Ecosystem</a>
-        <a href="#tokenomics">Scalyconomics</a>
-        <a href="#roadmap">Hatch Plan</a>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1>REPTILIO</h1>
-          <p class="subtitle">Crypto's Cold-Blooded Trendsetter</p>
-          <div class="cta-box">
-            <div class="contract-address">
-              <code id="contract">CA: 0x...REPT</code>
-              <button class="copy-btn" id="copyBtn">Copy</button>
-            </div>
-            <div class="social-links">
-              <a href="#" class="social-btn">Chart</a>
-              <a href="#" class="social-btn">Swap</a>
-            </div>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="reptilio-group">
-            <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%201-Photoroom.png" class="reptilio reptilio-1">
-            <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%202.png" class="reptilio reptilio-2">
-            <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20POSE%20debout%20(hood%20fix)-Photoroom.png" class="reptilio reptilio-3">
-          </div>
-          <div class="egg-container">
-            <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%203-Photoroom.png" class="egg">
-            <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%203-Photoroom%20(1).png" class="egg-hatching">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Ecosystem Section -->
-    <section id="about" class="ecosystem-section">
-      <div class="section-header">
-        <h2>Ecosystem Features</h2>
-        <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO2%20POSE%20-%20assis.png" class="section-icon">
-      </div>
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>Chameleon Swap</h3>
-          <p>Adaptive AMM that changes with market conditions</p>
-        </div>
-        <div class="feature-card">
-          <h3>Scale Shield</h3>
-          <p>Bulletproof security powered by lizard logic</p>
-        </div>
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <h1>Welcome to Reptilio!</h1>
+      <p>The most fun and vibrant memecoin in the crypto world!</p>
+      <div class="cta">
+        <button id="buy-button">BUY $REPTILIO NOW</button>
+        <img src="assets/reptilio-outfit1.png" alt="Reptilio Mascot" class="cta-mascot">
       </div>
     </section>
 
     <!-- Tokenomics Section -->
-    <section id="tokenomics" class="tokenomics-section">
-      <div class="section-header">
-        <h2>Scalyconomics</h2>
-        <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO1%20POSE-%20debout%20(queue%20cut%2C%20better%20on%20right).png" class="section-icon">
-      </div>
-      <div class="tokenomics-grid">
-        <div class="token-card">
-          <div class="token-value">1%</div>
-          <h3>Transaction Tax</h3>
-          <p>Kept low to keep things slippery</p>
-        </div>
-        <div class="token-card">
-          <div class="token-value">777M</div>
-          <h3>Total Supply</h3>
-          <p>Perfect reptilian number</p>
-        </div>
-      </div>
+    <section id="tokenomics">
+      <h2>Tokenomics</h2>
+      <p>Details about the token distribution and economics.</p>
     </section>
 
     <!-- Roadmap Section -->
-    <section id="roadmap" class="roadmap-section">
-      <div class="section-header">
-        <h2>Hatch Plan</h2>
-        <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%203-Photoroom%20(1).png" class="section-icon">
-      </div>
-      <div class="roadmap-steps">
-        <div class="roadmap-card">
-          <div class="phase">Phase 1</div>
-          <h3>Egg Incubation</h3>
-          <ul>
-            <li>DEX Listings</li>
-            <li>Community Nesting</li>
-            <li>Scale Network Test</li>
-          </ul>
-        </div>
-        <div class="roadmap-card">
-          <div class="phase">Phase 2</div>
-          <h3>Metamorphosis</h3>
-          <ul>
-            <li>CEX Listings</li>
-            <li>ReptileDAO Launch</li>
-            <li>Ecosystem Hatch</li>
-          </ul>
-        </div>
+    <section id="roadmap">
+      <h2>Roadmap</h2>
+      <div class="roadmap-container">
+        <img src="assets/burning-egg.png" alt="Burning Egg" class="egg burning-egg">
+        <img src="assets/hatched-egg.png" alt="Hatched Egg" class="egg hatched-egg">
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="main-footer">
-      <p>© 2024 REPTILIO Protocol - Not financial advice</p>
-      <p>Warning: May cause spontaneous scale growth</p>
-    </footer>
+    <!-- How to Buy Section -->
+    <section id="how-to-buy">
+      <h2>How to Buy</h2>
+      <p>Follow these steps to buy $REPTILIO:</p>
+      <img src="assets/reptilio-hood-pose.png" alt="Reptilio Guide" class="guide-mascot">
+    </section>
+
+    <!-- Community Section -->
+    <section id="community">
+      <h2>Join the Community</h2>
+      <p>Connect with us on social media!</p>
+    </section>
   </main>
 
-  <script>
-    // Copy function
-    const copyBtn = document.getElementById('copyBtn');
-    const contractCode = document.getElementById('contract').textContent;
-    copyBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText(contractCode).then(() => {
-        copyBtn.textContent = 'Copied';
-        setTimeout(() => {
-          copyBtn.textContent = 'Copy';
-        }, 2000);
-      });
-    });
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="#"><img src="assets/social-icons/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="assets/social-icons/telegram.png" alt="Telegram"></a>
+      <a href="#"><img src="assets/social-icons/discord.png" alt="Discord"></a>
+    </div>
+    <div class="contract-address">
+      <p>Contract Address: <span>0x123...abc</span></p>
+    </div>
+    <img src="assets/reptilio-sitting.png" alt="Reptilio Mascot" class="footer-mascot">
+  </footer>
 
-    // Animation trigger for cards
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.feature-card, .token-card, .roadmap-card').forEach((el) => {
-      observer.observe(el);
+  <script src="script.js"></script>
+<script> 
+  // Smooth scrolling
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
     });
-  </script>
+  });
+});
+
+// Roadmap egg animation
+window.addEventListener('scroll', () => {
+  const burningEgg = document.querySelector('.burning-egg');
+  const hatchedEgg = document.querySelector('.hatched-egg');
+  const scrollY = window.scrollY;
+
+  if (scrollY > 500) {
+    burningEgg.style.opacity = 0;
+    hatchedEgg.style.opacity = 1;
+  } else {
+    burningEgg.style.opacity = 1;
+    hatchedEgg.style.opacity = 0;
+  }
+});
+
+// CTA button redirect
+document.getElementById('buy-button').addEventListener('click', () => {
+  window.location.href = 'https://dex.example.com'; // Replace with actual DEX link
+});
+</script>
 </body>
 </html>
