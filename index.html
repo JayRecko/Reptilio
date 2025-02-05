@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reptilio Memecoin</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Background -->
@@ -36,81 +36,118 @@
         <button id="buy-button">BUY $REPTILIO NOW</button>
         <img src="assets/reptilio-outfit1.png" alt="Reptilio Mascot" class="cta-mascot">
       </div>
+      <div class="floating-reptilios">
+        <img src="assets/reptilio-outfit2.png" alt="Reptilio Floating" class="floating-reptilio">
+        <img src="assets/reptilio-outfit3.png" alt="Reptilio Floating" class="floating-reptilio">
+        <img src="assets/reptilio-hood-pose.png" alt="Reptilio Floating" class="floating-reptilio">
+      </div>
     </section>
 
     <!-- Tokenomics Section -->
     <section id="tokenomics">
       <h2>Tokenomics</h2>
-      <p>Details about the token distribution and economics.</p>
+      <div class="content-box">
+        <p>Details about the token distribution and economics.</p>
+        <ul>
+          <li>Total Supply: 1,000,000,000 $REPTILIO</li>
+          <li>5% Tax on Transactions</li>
+          <li>2% Redistributed to Holders</li>
+          <li>3% Added to Liquidity Pool</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Roadmap Section -->
     <section id="roadmap">
       <h2>Roadmap</h2>
-      <div class="roadmap-container">
-        <img src="assets/burning-egg.png" alt="Burning Egg" class="egg burning-egg">
-        <img src="assets/hatched-egg.png" alt="Hatched Egg" class="egg hatched-egg">
+      <div class="content-box">
+        <div class="roadmap-container">
+          <img src="assets/burning-egg.png" alt="Burning Egg" class="egg burning-egg">
+          <img src="assets/hatched-egg.png" alt="Hatched Egg" class="egg hatched-egg">
+        </div>
+        <div class="roadmap-steps">
+          <div class="step">
+            <h3>Phase 1: Launch</h3>
+            <p>Initial coin launch and community building.</p>
+          </div>
+          <div class="step">
+            <h3>Phase 2: Growth</h3>
+            <p>Partnerships and exchange listings.</p>
+          </div>
+          <div class="step">
+            <h3>Phase 3: Expansion</h3>
+            <p>Ecosystem development and new features.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- How to Buy Section -->
     <section id="how-to-buy">
       <h2>How to Buy</h2>
-      <p>Follow these steps to buy $REPTILIO:</p>
-      <img src="assets/reptilio-hood-pose.png" alt="Reptilio Guide" class="guide-mascot">
+      <div class="content-box">
+        <p>Follow these steps to buy $REPTILIO:</p>
+        <ol>
+          <li>Download a crypto wallet (e.g., MetaMask).</li>
+          <li>Add the Reptilio contract address.</li>
+          <li>Swap your ETH for $REPTILIO on a DEX.</li>
+        </ol>
+        <img src="assets/reptilio-hood-pose.png" alt="Reptilio Guide" class="guide-mascot">
+      </div>
     </section>
 
     <!-- Community Section -->
     <section id="community">
       <h2>Join the Community</h2>
-      <p>Connect with us on social media!</p>
+      <div class="content-box">
+        <p>Connect with us on social media!</p>
+        <div class="social-links">
+          <a href="#"><img src="assets/social-icons/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="assets/social-icons/telegram.png" alt="Telegram"></a>
+          <a href="#"><img src="assets/social-icons/discord.png" alt="Discord"></a>
+        </div>
+      </div>
     </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <div class="social-links">
-      <a href="#"><img src="assets/social-icons/twitter.png" alt="Twitter"></a>
-      <a href="#"><img src="assets/social-icons/telegram.png" alt="Telegram"></a>
-      <a href="#"><img src="assets/social-icons/discord.png" alt="Discord"></a>
-    </div>
     <div class="contract-address">
       <p>Contract Address: <span>0x123...abc</span></p>
     </div>
     <img src="assets/reptilio-sitting.png" alt="Reptilio Mascot" class="footer-mascot">
   </footer>
 
-  <script src="script.js"></script>
-<script> 
-  // Smooth scrolling
-document.querySelectorAll('nav a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
     });
-  });
-});
 
-// Roadmap egg animation
-window.addEventListener('scroll', () => {
-  const burningEgg = document.querySelector('.burning-egg');
-  const hatchedEgg = document.querySelector('.hatched-egg');
-  const scrollY = window.scrollY;
+    // Roadmap egg animation
+    window.addEventListener('scroll', () => {
+      const burningEgg = document.querySelector('.burning-egg');
+      const hatchedEgg = document.querySelector('.hatched-egg');
+      const scrollY = window.scrollY;
 
-  if (scrollY > 500) {
-    burningEgg.style.opacity = 0;
-    hatchedEgg.style.opacity = 1;
-  } else {
-    burningEgg.style.opacity = 1;
-    hatchedEgg.style.opacity = 0;
-  }
-});
+      if (scrollY > 500) {
+        burningEgg.style.opacity = 0;
+        hatchedEgg.style.opacity = 1;
+      } else {
+        burningEgg.style.opacity = 1;
+        hatchedEgg.style.opacity = 0;
+      }
+    });
 
-// CTA button redirect
-document.getElementById('buy-button').addEventListener('click', () => {
-  window.location.href = 'https://dex.example.com'; // Replace with actual DEX link
-});
-</script>
+    // CTA button redirect
+    document.getElementById('buy-button').addEventListener('click', () => {
+      window.location.href = 'https://dex.example.com'; // Replace with actual DEX link
+    });
+  </script>
 </body>
 </html>
