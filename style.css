@@ -76,3 +76,296 @@ body {
   color: white;
   text-decoration: none;
   font-family: var(--heading-font);
+  font-size: 1.4rem;
+  text-shadow: 0 0 10px var(--electric-blue);
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  transform: translateY(-3px);
+  color: var(--neon-green);
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-text h1 {
+  font-family: var(--heading-font);
+  font-size: 3.5rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 20px var(--purple-rain);
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+
+.cta-container {
+  position: relative;
+  margin-top: 40px;
+}
+
+.cta-button {
+  background: linear-gradient(45deg, var(--neon-green), var(--electric-blue));
+  border: none;
+  padding: 20px 40px;
+  border-radius: 30px;
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+  cursor: pointer;
+  animation: glow 2s infinite alternate;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+}
+
+.cta-mascot {
+  position: absolute;
+  right: -100px;
+  bottom: -30px;
+  width: 180px;
+  animation: bounce 1s infinite;
+  z-index: 2;
+}
+
+.hero-mascot {
+  width: 400px;
+  filter: drop-shadow(0 0 20px var(--purple-rain));
+}
+
+.tokenomics-section {
+  padding: 80px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-family: var(--heading-font);
+  font-size: 3rem;
+  color: var(--electric-blue);
+  margin-bottom: 15px;
+}
+
+.tokenomics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.token-card {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  border: 2px solid var(--purple-rain);
+  transition: transform 0.3s ease;
+  position: relative;
+  min-height: 280px;
+}
+
+.token-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-mascot {
+  width: 80px;
+  margin: -60px auto 15px;
+}
+
+.token-value {
+  font-size: 2.5rem;
+  color: var(--neon-green);
+  margin-bottom: 15px;
+}
+
+.roadmap-section {
+  position: relative;
+  padding: 80px 0;
+}
+
+.roadmap-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.roadmap-card {
+  background: rgba(0,245,255,0.1);
+  padding: 30px;
+  border-radius: 20px;
+  border: 2px solid var(--neon-green);
+  backdrop-filter: blur(5px);
+  position: relative;
+  min-height: 300px;
+}
+
+.phase-mascot {
+  width: 100px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-footer {
+  padding: 50px 0;
+  text-align: center;
+  position: relative;
+}
+
+.contract-address {
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: var(--neon-green);
+  text-shadow: 0 0 10px var(--electric-blue);
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: var(--heading-font);
+  font-size: 1.1rem;
+}
+
+.social-twitter { background: #1DA1F2; }
+.social-telegram { background: #0088CC; }
+.social-dextools { background: var(--purple-rain); }
+
+.footer-mascot {
+  width: 100px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.reptilio-float {
+  position: fixed;
+  width: 180px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 5;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.3));
+}
+
+.reptilio1 { top: 20%; left: 5%; animation: float 4s infinite; }
+.reptilio2 { top: 55%; right: 5%; animation: float 5s infinite; }
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px var(--neon-green); }
+  to { box-shadow: 0 0 30px var(--electric-blue); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero {
+    padding: 60px 0;
+    min-height: auto;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .cta-mascot {
+    right: -50px;
+    width: 120px;
+    bottom: -20px;
+  }
+
+  .hero-mascot {
+    width: 280px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .reptilio-float {
+    display: none;
+  }
+
+  .token-card, .roadmap-card {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .card-mascot {
+    width: 60px;
+    margin: -40px auto 10px;
+  }
+
+  .phase-mascot {
+    width: 80px;
+    top: -30px;
+  }
+
+  .footer-mascot {
+    position: static;
+    margin-top: 20px;
+  }
+}
