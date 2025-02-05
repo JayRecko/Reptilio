@@ -132,4 +132,48 @@
 
 <audio id="ribbitSound" src="https://assets.mixkit.co/active_storage/sfx/2571/2571-preview.mp3"></audio>
 </body>
+
+  <script>
+function triggerEasterEgg() {
+  const egg = document.querySelector('.easter-egg');
+  const audio = document.getElementById('ribbitSound');
+  
+  egg.classList.add('spin-animation');
+  audio.play();
+  
+  setTimeout(() => {
+    egg.classList.remove('spin-animation');
+  }, 1500);
+  
+  // Temporary confetti effect
+  const colors = ['#39FF14', '#00F5FF', '#BC13FE'];
+  for(let i = 0; i < 30; i++) {
+    const confetti = document.createElement('div');
+    confetti.style.cssText = `
+      position: fixed;
+      width: 8px;
+      height: 8px;
+      background: ${colors[Math.floor(Math.random()*colors.length)]};
+      border-radius: 50%;
+      left: ${event.pageX}px;
+      top: ${event.pageY}px;
+      pointer-events: none;
+      animation: confetti 1s linear;
+    `;
+    
+    document.body.appendChild(confetti);
+    setTimeout(() => confetti.remove(), 1000);
+  }
+}
+
+// Add confetti animation
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes confetti {
+    0% { transform: translate(0,0) rotate(0deg); opacity: 1; }
+    100% { transform: translate(${Math.random()*200-100}px, ${window.innerHeight}px) rotate(360deg); opacity: 0; }
+  }
+`;
+document.head.appendChild(style);
+</script>
 </html>
