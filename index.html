@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Reptilio - The Meme Lizard King</title>
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/LOGO%20REPTILIO-Photoroom.png">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -71,6 +72,13 @@
       </div>
     </section>
 
+    <!-- Mission Statement -->
+    <div class="mission-box">
+      <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%203-Photoroom%20(1).png" 
+           class="mission-egg" alt="Hatched Egg">
+      <p>Reptilio isn't just a meme coin - it's a movement! We combine lizard-powered fun with solid tokenomics, community-driven decisions, and endless meme possibilities. Our scaly friend is here to bring warmth to your crypto portfolio!</p>
+    </div>
+
     <!-- Roadmap Section -->
     <section id="roadmap" class="roadmap-section">
       <div class="section-header">
@@ -83,21 +91,21 @@
           <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%201-Photoroom.png" 
                class="phase-mascot" alt="Phase 1">
           <h3>Phase 1: Hatchling</h3>
-          <ul>
-            <li>Community Launch</li>
-            <li>DEX Listings</li>
-            <li>1k Holders</li>
-          </ul>
+          <div class="phase-content">
+            Community Launch<br>
+            DEX Listings<br>
+            1k Holders
+          </div>
         </div>
         <div class="roadmap-card">
           <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%202.png" 
                class="phase-mascot" alt="Phase 2">
           <h3>Phase 2: Alpha Lizard</h3>
-          <ul>
-            <li>CEX Listings</li>
-            <li>Meme Contests</li>
-            <li>10k Holders</li>
-          </ul>
+          <div class="phase-content">
+            CEX Listings<br>
+            Meme Contests<br>
+            10k Holders
+          </div>
         </div>
       </div>
     </section>
@@ -116,18 +124,5 @@
            class="footer-mascot" alt="Waving Reptilio">
     </footer>
   </main>
-
-  <script>
-    // Animation observer
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
-      });
-    }, { threshold: 0.3 });
-
-    document.querySelectorAll('.token-card, .roadmap-card').forEach(el => observer.observe(el));
-  </script>
 </body>
 </html>
