@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Reptilio - The Meme Lizard King</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Background Elements -->
@@ -16,8 +16,6 @@
          class="reptilio-float reptilio1" alt="Reptilio 1">
     <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20POSE%20debout%20(hood%20fix)-Photoroom.png" 
          class="reptilio-float reptilio2" alt="Reptilio Hood">
-    <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO2%20POSE%20-%20assis.png" 
-         class="reptilio-float reptilio3" alt="Sitting Reptilio">
   </div>
 
   <main class="container">
@@ -32,7 +30,6 @@
         <a href="#tokenomics">Tokenomics</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#buy">How to Buy</a>
-        <a href="#community">Community</a>
       </div>
     </nav>
 
@@ -57,15 +54,17 @@
     <section id="tokenomics" class="tokenomics-section">
       <div class="section-header">
         <h2>Tokenomics</h2>
-        <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%203-Photoroom.png" 
-             class="section-mascot" alt="Reptilio with Coins">
       </div>
       <div class="tokenomics-grid">
         <div class="token-card">
+          <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO2%20POSE%20-%20assis.png" 
+               class="card-mascot" alt="Token Reptilio">
           <div class="token-value">420B</div>
           <h3>Total Supply</h3>
         </div>
         <div class="token-card">
+          <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%203-Photoroom.png" 
+               class="card-mascot" alt="Tax Reptilio">
           <div class="token-value">0% Tax</div>
           <h3>No Fees</h3>
         </div>
@@ -75,16 +74,14 @@
     <!-- Roadmap Section -->
     <section id="roadmap" class="roadmap-section">
       <div class="section-header">
-        <h2>Egg-citing Journey</h2>
-        <div class="egg-container">
-          <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%203-Photoroom.png" 
-               class="egg burning" alt="Burning Egg">
-          <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%203-Photoroom%20(1).png" 
-               class="egg hatched" alt="Hatched Egg">
-        </div>
+        <h2>Our Evolution</h2>
+        <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20POSE%20debout%20(hood%20fix)-Photoroom.png" 
+             class="section-mascot" alt="Roadmap Reptilio">
       </div>
       <div class="roadmap-steps">
         <div class="roadmap-card">
+          <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%201-Photoroom.png" 
+               class="phase-mascot" alt="Phase 1">
           <h3>Phase 1: Hatchling</h3>
           <ul>
             <li>Community Launch</li>
@@ -93,6 +90,8 @@
           </ul>
         </div>
         <div class="roadmap-card">
+          <img src="https://raw.githubusercontent.com/JayRecko/Reptilio/refs/heads/main/REPTILIO3%20outfit%202.png" 
+               class="phase-mascot" alt="Phase 2">
           <h3>Phase 2: Alpha Lizard</h3>
           <ul>
             <li>CEX Listings</li>
@@ -119,26 +118,16 @@
   </main>
 
   <script>
-    // Egg animation on scroll
+    // Animation observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if(entry.isIntersecting) {
           entry.target.classList.add('animate');
         }
       });
-    }, { threshold: 0.5 });
+    }, { threshold: 0.3 });
 
-    document.querySelectorAll('.egg').forEach(egg => observer.observe(egg));
-
-    // Character hover effects
-    document.querySelectorAll('.reptilio-float').forEach(char => {
-      char.addEventListener('mouseover', () => {
-        char.style.transform = 'scale(1.1) rotate(5deg)';
-      });
-      char.addEventListener('mouseout', () => {
-        char.style.transform = 'scale(1) rotate(0)';
-      });
-    });
+    document.querySelectorAll('.token-card, .roadmap-card').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
